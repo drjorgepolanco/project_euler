@@ -1,4 +1,6 @@
 # Multiples of 3 and 5
+# ********************
+
 
 sum = 0
 
@@ -8,3 +10,9 @@ sum = 0
 	end
 end
 puts sum
+
+
+# OR
+
+(1..999).select { |num| (num % 3 == 0) || (num % 5 == 0) }.reduce(:+)
+
